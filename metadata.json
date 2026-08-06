@@ -1,0 +1,6 @@
+{
+  "name": "Quiztopia",
+  "description": "An AI-powered Y2K-inspired interactive general knowledge quiz application with timed challenges, power-ups, audio effects, and mystery rewards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

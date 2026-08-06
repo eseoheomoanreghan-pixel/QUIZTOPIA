@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+body {
+  background-color: #0d0d0d;
+  color: #e5e5e5;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  10%, 30%, 50%, 70%, 90% { transform: translate(-8px, 4px) rotate(-1.5deg); }
+  20%, 40%, 60%, 80% { transform: translate(8px, -4px) rotate(1.5deg); }
+}
+
+.animate-shake {
+  animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(3deg); }
+}
+
+.animate-float-slow {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+@keyframes floatReverse {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(10px) rotate(-3deg); }
+}
+
+.animate-float-reverse {
+  animation: floatReverse 3.5s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { filter: drop-shadow(0 0 10px rgba(37, 99, 235, 0.6)); }
+  50% { filter: drop-shadow(0 0 22px rgba(59, 130, 246, 0.95)); }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2s infinite;
+}
+
+/* Artistic Flair Sleek Buttons & Cards */
+.artistic-btn-primary {
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0px 4px 14px rgba(37, 99, 235, 0.4);
+  transition: all 0.15s ease;
+}
+.artistic-btn-primary:hover {
+  background: #1d4ed8;
+  box-shadow: 0px 6px 20px rgba(37, 99, 235, 0.6);
+}
+.artistic-btn-primary:active {
+  transform: translateY(2px);
+  box-shadow: 0px 2px 8px rgba(37, 99, 235, 0.3);
+}
+
+.artistic-card {
+  background-color: #141414;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
+}
+
+.artistic-card-glow {
+  background-color: #141414;
+  border: 1px solid rgba(37, 99, 235, 0.4);
+  box-shadow: 0 0 30px -5px rgba(37, 99, 235, 0.25);
+}
+
+/* Legacy y2k fallback classes re-mapped cleanly to Artistic Flair theme */
+.y2k-btn-primary {
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0px 4px 14px rgba(37, 99, 235, 0.4);
+  transition: all 0.15s ease;
+}
+.y2k-btn-primary:hover {
+  background: #1d4ed8;
+}
+.y2k-btn-primary:active {
+  transform: translateY(2px);
+}
+
+.y2k-btn-secondary {
+  background: #1f2937;
+  color: #e5e5e5;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.15s ease;
+}
+.y2k-btn-secondary:active {
+  transform: translateY(2px);
+}
+
+.y2k-btn-accent {
+  background: #2563eb;
+  color: #ffffff;
+  transition: all 0.15s ease;
+}
+.y2k-btn-accent:active {
+  transform: translateY(2px);
+}
+
+.y2k-card {
+  background-color: #141414;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+::-webkit-scrollbar-thumb {
+  background: #2563eb;
+  border-radius: 3px;
+}
+
